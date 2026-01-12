@@ -1,0 +1,16 @@
+database:
+  host: localhost
+  port: 5432
+  user: [[ getenv "DB_USER" ]]
+  password: [[ getenv "DB_PASSWORD" ]]
+  database: myapp
+
+server:
+  address: [[ getenv "SERVER_ADDRESS" ]]
+  port: 8080
+
+app:
+  name: MyApplication
+  environment: [[ getenv "APP_ENV" ]]
+  debug: false
+
